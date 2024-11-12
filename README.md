@@ -1,6 +1,6 @@
-- nom :
-- prénom :
-- URL Netlify :
+- nom : THAI
+- prénom : Nicolas
+- URL Netlify : https://bucolic-salmiakki-5b6320.netlify.app/
 
 # Travail
 
