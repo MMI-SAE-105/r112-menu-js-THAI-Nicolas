@@ -18,7 +18,7 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
   /* Étend le menu jusqu'à droite de la page */
   right: 0;
   /* Définit une transition de 0.4 secondes pour toutes les propriétés, avec un effet d'accélération et de décélération : https://developer.mozilla.org/fr/docs/Web/CSS/transition */
-  transition: all 0.4s ease-in-out 1s;
+  transition: all 0.4s;
   /* Rend le menu complètement transparent : https://developer.mozilla.org/fr/docs/Web/CSS/opacity */
   opacity: 0;
   /* Cache le menu en le rendant invisible : https://developer.mozilla.org/fr/docs/Web/CSS/visibility#hidden  */
@@ -27,9 +27,9 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
 
 /* On se sert de Javascript pour gérer l'ouverture et la fermeture du menu avec l'attribut "aria-hidden" */
 .menu[aria-hidden="false"] {
-  ______________;
+  visibility: visible;
   /* Rend le menu visible */
-  ______________;
+  opacity: 1;
   /* Rend le menu complètement opaque */
 }
 
