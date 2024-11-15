@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu JS</title>
+  <title>AdopteCats</title>
   <!-- Déclaration de la feuille de style -->
   <link rel="stylesheet" href="/src/css/components/menu.css" />
   <script type="module" src="/src/js/script.js"></script>
@@ -14,26 +14,33 @@
   <!-- En-tête de la page -->
   <header class="header container">
 
+    <div class="header__start">
+
+      <a href="#" class="header__logolink">
+        <img class="header__logo-img" src="/public/icones/logo-website.svg" alt="Logo du site AdopteCat">
+      </a>
+    </div>
+
     <div class="header__end">
 
       <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-        🍔
+        <img class="menu-btn__image" src="/public/icones/logo-menu.svg" alt="Logo menu Icon">
       </button>
 
       <!-- Menu principal -->
       <nav class="header__menu menu" id="mainNav" aria-hidden="true">
         <ul class="menu__list list-unstyled">
           <li class="menu__item">
-            <a class="menu__link" href="#">Item de menu un</a>
+            <a class="menu__link" href="/cats/chat-1.html">Nos chats noirs</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Item de menu deux</a>
+            <a class="menu__link" href="/cats/chat-2.html">Nos chats roux</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Item de menu trois</a>
+            <a class="menu__link" href="/dogs/chien-1.html">Top 5 des chiens les plus adoptées</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Item de menu quatre</a>
+            <a class="menu__link" href="/dogs/chien-2.html">Top 5 des chiens les plus dangerueux</a>
           </li>
         </ul>
       </nav>
@@ -42,10 +49,28 @@
   </header>
   <!-- Contenu principal de la page -->
   <main>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et est adipisci repellat aliquid, sit commodi facere
-      similique quidem iste sunt accusamus accusantium ab unde dolore quaerat voluptatibus error voluptatem molestiae?
-      sefes
+    <h1>Bienvenue sur AdopteCats !</h1>
+    <p>Bienvenue sur mon site de chat & de chiens
     </p>
+
+    <section>
+      <h2>À la recherche d'un compagnon à quatre pattes ?</h2>
+      <p>Chez AdoptCats, nous croyons que chaque animal mérite un foyer chaleureux et aimant. Nous sommes spécialisés
+        dans
+        l'adoption de chats, qu'ils soient chatons joueurs, adultes câlins ou seniors tranquilles. Chaque félin a son
+        histoire
+        et ses besoins, et nous sommes là pour vous guider à trouver votre compagnon idéal.</p>
+
+      <div>
+        <img src="" alt="Icone de flèche">
+        <h3>Découvrez nos chats disponibles à l'adoption !</h3>
+        <p>Explorez notre galerie et laissez-vous séduire par leurs adorables portraits. Tous nos chats sont vaccinés,
+          stérilisés
+          et prêts à partager leur amour avec vous.</p>
+      </div>
+    </section>
+
+
   </main>
   <!-- Fin du contenu principal -->
 

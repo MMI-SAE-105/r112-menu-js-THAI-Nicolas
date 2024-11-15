@@ -58,3 +58,22 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
   transform: rotate(90deg);
   /* Fait pivoter le bouton de menu de 90 degrés lorsqu'il est en état "expanded" */
 }
+
+.menu-btn__image {
+  width: 24px;
+  ;
+  /* Définit la largeur de l'image à 100% */
+  height: 24px;
+  /* Définit la hauteur de l'image à "auto" */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo-img {
+  width: 100px;
+  height: 100px;
+}
