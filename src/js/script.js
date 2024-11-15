@@ -1,5 +1,6 @@
 const toggle = document.querySelector("button");
 const nav = document.querySelector("nav");
+const body = document.querySelector("body")
 
 
 
@@ -9,4 +10,5 @@ toggle.addEventListener("click", () => {
     console.log("isOpen : ", isOpen, "isClosed : ", isClosed);
     nav.ariaHidden = isOpen;
     toggle.ariaExpanded = isClosed;
+    body.classList.add("noscroll");
 })
