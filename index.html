@@ -8,6 +8,10 @@
   <!-- Déclaration de la feuille de style -->
   <link rel="stylesheet" href="/src/css/components/menu.css" />
   <script type="module" src="/src/js/script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +27,8 @@
 
     <div class="header__end">
 
-      <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+      <button class="header__menu-btn menu-btn" aria-label="Accéder au menu principal" aria-expanded="false"
+        aria-controls="mainNav">
         <img class="menu-btn__image" src="/public/icones/logo-menu.svg" alt="Logo menu Icon">
       </button>
 
@@ -40,7 +45,7 @@
             <a class="menu__link" href="/dogs/chien-1.html">Top 5 des chiens les plus adoptées</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="/dogs/chien-2.html">Top 5 des chiens les plus dangerueux</a>
+            <a class="menu__link" href="/dogs/chien-2.html">Top 5 des chiens les plus dangereux</a>
           </li>
         </ul>
       </nav>
@@ -48,31 +53,122 @@
     </div>
   </header>
   <!-- Contenu principal de la page -->
-  <main>
-    <h1>Bienvenue sur AdopteCats !</h1>
-    <p>Bienvenue sur mon site de chat & de chiens
-    </p>
-
-    <section>
-      <h2>À la recherche d'un compagnon à quatre pattes ?</h2>
-      <p>Chez AdoptCats, nous croyons que chaque animal mérite un foyer chaleureux et aimant. Nous sommes spécialisés
-        dans
-        l'adoption de chats, qu'ils soient chatons joueurs, adultes câlins ou seniors tranquilles. Chaque félin a son
-        histoire
-        et ses besoins, et nous sommes là pour vous guider à trouver votre compagnon idéal.</p>
-
-      <div>
-        <img src="" alt="Icone de flèche">
-        <h3>Découvrez nos chats disponibles à l'adoption !</h3>
-        <p>Explorez notre galerie et laissez-vous séduire par leurs adorables portraits. Tous nos chats sont vaccinés,
-          stérilisés
-          et prêts à partager leur amour avec vous.</p>
+  <main class="main">
+    <div class="container-flexbox">
+      <div class="div__intro-left">
+        <h1 class="div__intro-title">Bienvenue sur AdopteCats !</h1>
+        <p class="div__intro-text">Pour que chaque animal puisse vivre dans un foyer aimant et chalereux. Adoptez un
+          animal et
+          sa
+          charmante histoire.</p>
+        <a class="div__intro-btn" href="">LIRE</a>
       </div>
+      <div class="div__intro-right">
+        <img class="div__intro-img" src="/public/icones/2-chats.svg" alt="2 chats">
+      </div>
+    </div>
+
+
+    <section class="main-section section1">
+
+      <article class="section__article article-roux">
+        <div>
+          <h2 class="article__title">Découvrez nos magnifiques chats roux</h3>
+            <p class="article__description">Craquez pour nos chats roux au pelage flamboyant et aux cœurs tendres !
+              Espiègles
+              ou câlins, ils n’attendent qu’une
+              chose : partager votre vie et remplir votre quotidien de chaleur. Découvrez vite leurs profils !</p>
+            <a class="div__intro-btn" href="/cats/chat-2.html">VOIR</a>
+        </div>
+        <div>
+          <img src="/public/icones/chats-roux.svg" alt="Chat roux">
+        </div>
+
+      </article>
+      <article class="section__article article-noirs">
+        <div>
+          <img src="/public/icones/chats-noir.svg" alt="Chat noir">
+        </div>
+        <div>
+          <h2 class="article__title">Nos élégants chats noirs</h2>
+          <p class="article__description">Plongez dans l’univers mystérieux de nos chats noirs, au pelage brillant et
+            aux
+            regards captivants. Tendres, joueurs ou
+            majestueux, ils sauront conquérir votre cœur et illuminer vos journées. Découvrez leurs profils et trouvez
+            votre
+            compagnon idéal !</p>
+          <a class="div__intro-btn" href="/cats/chat-1.html">VOIR</a>
+        </div>
+      </article>
+
+
+
+    </section>
+
+    <section class="main__section section2">
+      <div class="section2__title-position">
+        <h2 class="section2__title">Nos articles animaux</h2>
+      </div>
+
+
+      <article>
+        <div class="article__div-left">
+          <img class="article__div-img" src="/public/img/chien-intelligents/border-collie.jpg"
+            alt="Image de Border Collie">
+        </div>
+        <div>
+          <h3>Les 5 chiens les plus intélligents</h3>
+          <a class="div__intro-btn" href="/dogs/chien-1.html">LIRE L'ARTICLE</a>
+        </div>
+      </article>
+
+      <article>
+        <div class="article__div-right">
+          <img class="article__div-img" src="/public/img/chien-dangereux/pitbull.jpg" alt="Image de Pitbull">
+        </div>
+        <div>
+          <h3>Les 5 chiens les plus dangereux</h3>
+          <a class="div__intro-btn" href="/dogs/chien-2.html">LIRE L'ARTICLE</a>
+        </div>
+      </article>
+
+
     </section>
 
 
   </main>
   <!-- Fin du contenu principal -->
+  <footer class="footer">
+    <ul>
+      <li>
+        <h2 class="footer__title">Pour nous contacter</h2>
+      </li>
+      <li>
+        <img class="footer__icon" src="/public/icones/mail.svg" alt="Icon Email">
+        <a class="footer__info" href="">@adopteCat@contact.fr</a>
+      </li>
+      <li>
+        <img class="footer__icon" src="/public/icones/phone.svg" alt="Icone Téléphone">
+        <a class="footer__info" href="">+33 1 54 84 21 36</a>
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        <h2 class="footer__title">Pour nous rendre visite</h2>
+      </li>
+      <li>
+        <img class="footer__icon" src="/public/icones/localisation.svg" alt="Icone localisation">
+        <a class="footer__info" href="">88 rue Adopte Cat, Paris 75000</a>
+      </li>
+      <li>
+        <img class="footer__icon" src="/public/icones/time.svg" alt="Icone horaire">
+        <a class="footer__info" href="">Horaire d'ouverture</a>
+      </li>
+    </ul>
+    <img class="footer__cat" src="/public/icones/chat.svg" alt="Petit chat">
+
+  </footer>
 
 </body>
 

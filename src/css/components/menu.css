@@ -77,3 +77,144 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
   width: 100px;
   height: 100px;
 }
+
+.footer {
+  color: white;
+  background-color: #8C7851;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__cat {
+  width: 200px;
+  height: 200px;
+}
+
+.header {
+  background-color: #F9F4EF;
+}
+
+.main {
+  background-color: #F9F4EF;
+}
+
+.container-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+  background-color: #F9F4EF;
+}
+
+body {
+  font-family: Montserrat;
+}
+
+.div__intro-title {
+  width: 742px;
+  font-size: 74px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 2.96px;
+  ;
+}
+
+.div__intro-text {
+  width: 742px;
+  font-size: 32px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: ;
+}
+
+.div__intro-btn {
+  background-color: #8C7851;
+  color: white;
+  width: 252px;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 113px;
+
+}
+
+.section1 {
+  background-color: white;
+  margin-bottom: 150px;
+}
+
+.article-roux {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-noirs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article__description {
+  width: 540px;
+}
+
+.section2 {
+  padding-bottom: 100px;
+}
+
+.section2__title-position {
+  text-align: center;
+}
+
+.section2__title {
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.92px;
+  color: #8C7851;
+  text-align: center;
+
+}
+
+.article__div-left {
+  display: flex;
+  width: 766px;
+  height: 715px;
+}
+
+.article__div-img {
+  width: 766px;
+  height: 373px;
+  object-fit: cover;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: 1.92px;
+}
+
+.footer__info {
+  color: white;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 1.28px;
+}
+
+.footer__icon {
+  width: 16px;
+  height: 16px;
+}
