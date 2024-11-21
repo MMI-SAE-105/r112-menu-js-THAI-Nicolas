@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Les chiens les plus intelligents</title>
     <!-- Déclaration de la feuille de style -->
-    <link rel="stylesheet" href="/src/css/components/menu.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
     <script type="module" src="/src/js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="header container">
+    <header class="header header__article">
 
         <div class="header__start">
 
@@ -22,8 +26,9 @@
 
         <div class="header__end">
 
-            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-                <img class="menu-btn__image" src="/public/icones/logo-menu.svg" alt="Logo menu Icon">
+            <button class="header__menu-btn menu-btn" aria-label="Accéder au menu principal" aria-expanded="false"
+                aria-controls="mainNav">
+                <img class="menu-btn-img" src="/public/icones/logo-menu.svg" alt="Logo menu Icon">
             </button>
 
             <!-- Menu principal -->
@@ -39,7 +44,7 @@
                         <a class="menu__link" href="/dogs/chien-1.html">Top 5 des chiens les plus adoptées</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/dogs/chien-2.html">Top 5 des chiens les plus dangerueux</a>
+                        <a class="menu__link" href="/dogs/chien-2.html">Top 5 des chiens les plus dangereux</a>
                     </li>
                 </ul>
             </nav>
@@ -48,100 +53,116 @@
 
     </header>
     <main>
-        <h1>Top 5 des Chiens les Plus Intelligents : Les Étoiles Canines</h1>
-        <p>Les chiens ne sont pas seulement nos meilleurs amis : certains d’entre eux sont de véritables génies du règne
-            animal.
-            Doués pour apprendre des ordres complexes, résoudre des problèmes et anticiper nos besoins, voici le top 5
-            des
-            races de
-            chiens les plus intelligentes, selon les experts.</p>
-        <img src="/public/icones/horizontal-bar.svg" alt="">
+        <div class="main__article--intro">
+            <h1 class="main__article--title">Top 5 des Chiens les Plus Intelligents : Les Étoiles Canines</h1>
+            <p class="main__article--text">Les chiens ne sont pas seulement nos meilleurs amis, certains sont de
+                véritables génies.</p>
+            <img class="main__article--bar" src="/public/icones/horizontal-line.svg" alt="Barre horizontale">
+        </div>
 
-        <section>
-            <div class="container">
-                <h2>Le Border Collie : Le maître incontesté</h2>
-                <p>Le Border Collie est souvent qualifié de chien le plus intelligent du monde. Connu pour son
-                    incroyable capacité à
-                    comprendre et exécuter des ordres, il est particulièrement prisé pour le travail de troupeau. Ces
-                    chiens peuvent
-                    mémoriser des centaines de mots et sont capables d’apprendre rapidement des tours et des routines.
-                    Leur énergie
-                    débordante nécessite beaucoup d’exercice et de stimulation mentale.</p>
-                <img src="/public/img/chien-intelligents/border-collie.jpg" alt="Border Collie">
+        <section class="section__carousel--container section__dog">
+            <div class="article-dog">
+                <a href="https://fr.wikipedia.org/wiki/Border_collie" target="_blank">
+                    <h2 class="carousel__name dog__name">Top 1 : Le Border Collie, le maître incontesté</h2>
+                    <img class="dog__img" src="/public/img/chien-intelligents/border-collie.jpg" alt="">
+                    <p class="dog__description">Le Border Collie est souvent qualifié de chien le plus intelligent
+                        du
+                        monde. Connu pour son
+                        incroyable capacité à
+                        comprendre et exécuter des ordres, il est particulièrement prisé pour le travail de troupeau.
+                        Ces
+                        chiens peuvent
+                        mémoriser des centaines de mots et sont capables d'apprendre rapidement des tours et des
+                        routines.
+                        Leur énergie
+                        débordante nécessite beaucoup d'exercice et de stimulation mentale.</p>
+                </a>
             </div>
-
-            <div class="container">
-                <h2>Le Caniche : L’élégance cérébrale</h2>
-                <p>Ne vous laissez pas tromper par son apparence sophistiquée : le Caniche est un chien brillant.
-                    Disponible en trois
-                    tailles (toy, miniature, et standard), il excelle en dressage, que ce soit pour des compétitions ou
-                    des performances
-                    artistiques. En plus d’être intelligent, il est également très adaptable et affectueux.</p>
-                <img src="/public/img/chien-intelligents/caniche.jpg" alt="Le Caniche">
+            <div class="article-dog">
+                <a href="https://fr.wikipedia.org/wiki/Caniche" target="_blank">
+                    <h2 class="carousel__name dog__name">Top 2 : Le Caniche, l'élégance cérébrale</h2>
+                    <img class="dog__img" src="/public/img/chien-intelligents/caniche.jpg" alt="Caniche">
+                    <p class="dog__description">Ne vous laissez pas tromper par son apparence sophistiquée : le
+                        Caniche est un chien brillant.
+                        Disponible en trois
+                        tailles (toy, miniature, et standard), il excelle en dressage, que ce soit pour des compétitions
+                        ou
+                        des performances
+                        artistiques. En plus d'être intelligent, il est également très adaptable et affectueux.</p>
+                </a>
             </div>
-
-            <div class="container">
-                <h2>Le Berger Allemand : L’esprit protecteu</h2>
-                <p>Réputé pour ses compétences en tant que chien de travail, le Berger Allemand est souvent utilisé dans
-                    la police,
-                    l’armée, ou comme chien-guide. Son intelligence combinée à une grande loyauté en fait un élève
-                    exemplaire, capable de
-                    maîtriser des tâches complexes comme ouvrir des portes ou suivre des pistes odorantes.</p>
-                <img src="/public/img/chien-intelligents/berger-allemand.jpg" alt="Berger Allemand">
+            <div class="article-dog">
+                <a href="https://fr.wikipedia.org/wiki/Berger_allemand" target="_blank">
+                    <h2 class="carousel__name dog__name">Top 3 : Le Berger Allemand, l'esprit protecteur</h2>
+                    <img class="dog__img" src="/public/img/chien-intelligents/berger-allemand.jpg"
+                        alt="Berger Allemand">
+                    <p class="dog__description">Réputé pour ses compétences en tant que chien de travail, le Berger
+                        Allemand est souvent utilisé dans
+                        la police,
+                        l'armée, ou comme chien-guide. Son intelligence combinée à une grande loyauté en fait un élève
+                        exemplaire, capable de
+                        maîtriser des tâches complexes comme ouvrir des portes ou suivre des pistes odorantes.</p>
+                </a>
             </div>
-
-            <div class="container">
-                <h2>Le Golden Retriever : Le doux stratège</h2>
-                <p>Le Golden Retriever est non seulement affectueux et sociable, mais aussi extrêmement malin. Grâce à
-                    sa mémoire
-                    impressionnante et sa capacité d’apprentissage, il excelle dans des rôles variés : chien
-                    d’assistance, chien de
-                    thérapie, ou partenaire de jeux. Son intelligence émotionnelle le rend particulièrement doué pour
-                    comprendre les
-                    humains.</p>
-                <img src="/public/img/chien-intelligents/golden-retriever.JPG" alt="Golden Retriever">
+            <div class="article-dog">
+                <a href="https://fr.wikipedia.org/wiki/Golden_retriever" target="_blank">
+                    <h2 class="carousel__name dog__name">Top 4 : Le Golden Retriever, le doux stratège</h2>
+                    <img class="dog__img" src="/public/img/chien-intelligents/golden-retriever.JPG" alt="Caniche">
+                    <p class="dog__description">Le Golden Retriever est non seulement affectueux et sociable, mais
+                        aussi extrêmement malin. Grâce à
+                        sa mémoire
+                        impressionnante et sa capacité d'apprentissage, il excelle dans des rôles variés : chien
+                        d'assistance, chien de
+                        thérapie, ou partenaire de jeux. Son intelligence émotionnelle le rend particulièrement doué
+                        pour
+                        comprendre les
+                        humains.</p>
+                </a>
             </div>
-
-            <div class="container">
-                <h2>Le Doberman : La force et l’intelligence réunies</h2>
-                <p>Le Doberman est souvent perçu comme un chien de garde, mais il est aussi incroyablement intelligent.
-                    Agile, rapide et
-                    attentif, il excelle dans l’apprentissage d’ordres complexes. Avec une éducation adaptée, il devient
-                    un compagnon
-                    équilibré, protecteur et obéissant.</p>
-                <img src="/public/img/chien-intelligents/doberman.jpg" alt="Doberman">
+            <div class="article-dog">
+                <a href="https://fr.wikipedia.org/wiki/Dobermann" target="_blank">
+                    <h2 class="carousel__name dog__name">Top 5 : Le Doberman, la force et l'intelligence réunies</h2>
+                    <img class="dog__img" src="/public/img/chien-intelligents/doberman.jpg" alt="Doberman">
+                    <p class="dog__description">Le Doberman est souvent perçu comme un chien de garde, mais il est
+                        aussi incroyablement intelligent.
+                        Agile, rapide et
+                        attentif, il excelle dans l'apprentissage d'ordres complexes. Avec une éducation adaptée, il
+                        devient
+                        un compagnon
+                        équilibré, protecteur et obéissant.</p>
+                </a>
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer__article">
         <ul class="footer__left">
             <li>
-                <h2 class="footer__title">Pour nous contacter</h2>
+                <h2 class="footer__title footer__title--article">Pour nous contacter</h2>
             </li>
             <li class="footer__item">
                 <img class="footer__icon" src="/public/icones/mail.svg" alt="Icon Email">
-                <a class="footer__info" href="">@adopteCat@contact.fr</a>
+                <a class="footer__info footer__info--article" href="">@adopteCat@contact.fr</a>
             </li>
             <li class="footer__item">
                 <img class="footer__icon" src="/public/icones/phone.svg" alt="Icone Téléphone">
-                <a class="footer__info" href="">+33 1 54 84 21 36</a>
+                <a class="footer__info footer__info--article" href="">+33 1 54 84 21 36</a>
             </li>
         </ul>
 
         <ul class="footer_right">
             <li>
-                <h2 class="footer__title">Pour nous rendre visite</h2>
+                <h2 class="footer__title footer__title--article">Pour nous rendre visite</h2>
             </li>
             <li class="footer__item">
                 <img class="footer__icon" src="/public/icones/localisation.svg" alt="Icone localisation">
-                <a class="footer__info" href="">88 rue Adopte Cat, Paris 75000</a>
+                <a class="footer__info footer__info--article" href="">88 rue Adopte Cat, Paris 75000</a>
             </li>
             <li class="footer__item">
                 <img class="footer__icon" src="/public/icones/time.svg" alt="Icone horaire">
-                <a class="footer__info" href="">Horaire d'ouverture</a>
+                <a class="footer__info footer__info--article" href="">Horaire d'ouverture</a>
             </li>
         </ul>
-        <img class="footer__cat" src="/public/icones/chat.svg" alt="Petit chat">
+        <img class="footer__cat footer__cat--article" src="/public/icones/chat.svg" alt="Petit chat">
 
     </footer>
 </body>

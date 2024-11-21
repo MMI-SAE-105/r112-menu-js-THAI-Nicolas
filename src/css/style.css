@@ -320,9 +320,23 @@ div.div__btn:active {
     padding-bottom: 20px;
 }
 
+.article-dog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
 .carousel__chat--img {
     width: 500px;
     height: 250px;
+    object-fit: cover;
+}
+
+.dog__img {
+    width: 1000px;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -332,6 +346,10 @@ div.div__btn:active {
 
 .carousel__name {
     margin-bottom: 0px;
+}
+
+.dog__name {
+    margin-bottom: 25px;
 }
 
 .carousel__nickname {
@@ -346,4 +364,10 @@ div.div__btn:active {
     text-align: center;
     margin-bottom: 30px;
     margin-top: 10px;
+}
+
+.dog__description {
+    width: 1000px;
+    font-size: 20px;
+    margin-top: 30px;
 }
