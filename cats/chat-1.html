@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nos chats noirs</title>
     <!-- Déclaration de la feuille de style -->
-    <link rel="stylesheet" href="/src/css/components/menu.css" />
+    <link rel="stylesheet" href="/src/css/style.css">
     <script type="module" src="/src/js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
-<main>
-    <header class="header container">
+
+<body>
+
+    <header class="header header__article">
 
         <div class="header__start">
 
@@ -21,8 +27,9 @@
 
         <div class="header__end">
 
-            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-                <img class="menu-btn__image" src="/public/icones/logo-menu.svg" alt="Logo menu Icon">
+            <button class="header__menu-btn menu-btn" aria-label="Accéder au menu principal" aria-expanded="false"
+                aria-controls="mainNav">
+                <img class="menu-btn-img" src="/public/icones/logo-menu.svg" alt="Logo menu Icon">
             </button>
 
             <!-- Menu principal -->
@@ -38,7 +45,7 @@
                         <a class="menu__link" href="/dogs/chien-1.html">Top 5 des chiens les plus adoptées</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/dogs/chien-2.html">Top 5 des chiens les plus dangerueux</a>
+                        <a class="menu__link" href="/dogs/chien-2.html">Top 5 des chiens les plus dangereux</a>
                     </li>
                 </ul>
             </nav>
@@ -46,99 +53,107 @@
         </div>
 
     </header>
-    <h1>Nos chats noirs à l'adoption</h1>
-    <p>Decouvrez nos meilleurs pépites félins</p>
-    <img src="/public/icones/horizontal-bar.svg" alt="">
-
-    <section>
-        <div class="carousel">
-            <img src="/public/img/chats-noirs/chat-1.jpg" alt="">
-            <h2>Luna - 2 ans</h2>
-            <h3>Une princesse élégante au cœur tendre</h3>
-            <p>Luna est une jeune chatte de 2 ans au pelage noir brillant comme une nuit étoilée. Cette demoiselle
-                raffinée
-                a une
-                démarche gracieuse et un regard doré plein de mystères. Luna est de nature douce et calme, préférant les
-                câlins
-                tranquilles à l'agitation. Elle adore s’installer près d’une fenêtre ensoleillée pour observer le monde
-                extérieur. Bien
-                qu’un peu timide au début, elle se montre très affectueuse une fois qu’elle se sent en confiance. Luna
-                serait idéale
-                pour une famille aimante ou une personne vivant dans un environnement paisible.</p>
+    <main>
+        <div class="main__article--intro">
+            <h1 class="main__article--title">Nos chats noirs à l'adoption</h1>
+            <p class="main__article--text">Decouvrez nos meilleurs pépites félins !</p>
+            <img class="main__article--bar" src="/public/icones/horizontal-line.svg" alt="">
         </div>
 
-        <div class="carousel">
-            <img src="/public/img/chats-noirs/chat-2.jpg" alt="">
-            <h2>Salem - 4 ans</h2>
-            <h3>Le roi de l'aventure et des câlins</h3>
-            <p>Salem, âgé de 4 ans, est un véritable charmeur ! Son pelage noir ébène et ses yeux vert émeraude captent
-                instantanément
-                l'attention. Il est curieux de nature et adore explorer son environnement, qu'il s'agisse de grimper sur
-                des
-                étagères ou
-                de chasser des jouets en plumes. Mais ne vous y trompez pas : Salem est aussi un amateur de siestes
-                confortables et de
-                séances de câlins prolongées. Très sociable, il s'entend bien avec les enfants et les autres animaux.
-                Salem
-                est le
-                compagnon idéal pour une maison pleine de vie !</p>
-        </div>
 
-        <div class="carousel">
-            <img src="/public/img/chats-noirs/chat-3.jpg" alt="">
-            <h2>Minuit - 1 an</h2>
-            <h3>Un jeune explorateur avec une âme tendre</h3>
-            <p>Minuit, 1 an, est un chat plein de malice et d’énergie. Ce jeune aventurier adore jouer avec tout ce qui
-                bouge, des
-                balles aux ficelles, et peut transformer n’importe quel objet du quotidien en un trésor fascinant. Son
-                pelage soyeux est
-                rehaussé par des yeux jaunes pétillants qui reflètent sa curiosité insatiable. Mais une fois sa journée
-                bien
-                remplie, il
-                devient un adorable ronronneur, cherchant les genoux de son humain préféré pour une séance de câlins.
-                Minuit
-                serait
-                parfait pour une famille prête à lui offrir amour et stimulation.</p>
-        </div>
+        <section class="section__carousel--container">
+            <div class="article__carousel">
+                <img class="carousel__chat--img chatnoir" src="/public/img/chats-noirs/chat-1.jpg" alt="">
+                <h2 class="carousel__name">Luna - 2 ans</h2>
+                <h3 class="carousel__nickname">Une princesse élégante au cœur tendre</h3>
+                <p class="carousel__description">Luna est une femelle douce et calme qui adore
+                    les câlins et se prélasser près des fenêtres
+                    ensoleillées. Elle est timide au début mais devient très affectueuse une fois en confiance, parfaite
+                    pour un foyer
+                    tranquille et aimant.</p>
+                <a class="div__btn" href="">Adoptez-la</a>
+            </div>
 
-        <div class="carousel">
-            <img src="/public/img/chats-noirs/chat-4.jpg" alt="">
-            <h2>Saphir - 5 ans</h2>
-            <h3>Un grand sage au regard apaisant</h3>
-            <p>Saphir est un chat noir mature de 5 ans qui dégage une aura de sérénité. Avec ses yeux profonds et son
-                pelage
-                impeccablement lustré, il est la définition même de l’élégance. Saphir aime la tranquillité et préfère
-                des
-                interactions
-                calmes et posées. C’est un grand amateur de douceur : il adore les caresses lentes et les moments de
-                complicité avec son
-                humain. Il conviendrait parfaitement à une personne seule ou à un foyer calme où il pourra profiter
-                pleinement de
-                l’attention qu’il mérite. Saphir est la preuve que les chats adultes ont un amour inestimable à offrir.
-            </p>
-        </div>
+            <div class="article__carousel">
+                <img class="carousel__chat--img" src="/public/img/chats-noirs/chat-2.jpg" alt="">
+                <h2 class="carousel__name">Salem - 4 ans</h2>
+                <h3 class="carousel__nickname">Le roi de l'aventure et des câlins</h3>
+                <p class="carousel__description">Salem est un charmeur au pelage noir et aux yeux verts. Curieux
+                    et joueur, il aime explorer et chasser des
+                    jouets. Très sociable, il s'entend bien avec les enfants et les autres animaux, tout en appréciant
+                    les siestes et les
+                    câlins. Parfait pour une maison animée !</p>
+                <a class="div__btn" href="">Adoptez-le</a>
+            </div>
 
-        <div class="carousel">
-            <img src="/public/img/chats-noirs/chat-5.jpg" alt="">
-            <h2>Ombre - 3 mois</h2>
-            <h3>Un petit farceur au grand cœur</h3>
-            <p>Ombre est un chaton espiègle de 3 mois qui saura faire fondre votre cœur avec ses facéties. Tout petit
-                mais
-                déjà très
-                téméraire, il court après les jouets, grimpe où il peut, et découvre le monde avec une énergie
-                débordante.
-                Son pelage
-                noir doux et brillant met en valeur ses petits yeux pétillants de joie. Il est encore en pleine phase de
-                découverte et
-                cherche une famille prête à lui offrir amour et patience pour grandir dans un foyer chaleureux. Adoptez
-                Ombre, et il
-                remplira votre maison de rires et de ronrons !</p>
-        </div>
+            <div class="article__carousel">
+                <img class="carousel__chat--img" src="/public/img/chats-noirs/chat-3.jpg" alt="">
+                <h2 class="carousel__name">Minuit - 1 an</h2>
+                <h3 class="carousel__nickname">Un jeune explorateur avec une âme tendre</h3>
+                <p class="carousel__description">Minuit est un chat malicieux et énergique, toujours prêt à jouer
+                    avec tout ce qui bouge. Son pelage soyeux et ses
+                    yeux jaunes reflètent sa curiosité. Une fois sa journée de jeu terminée, il cherche des câlins et
+                    devient un adorable
+                    ronronneur. Parfait pour une famille active et aimante !</p>
+                <a class="div__btn" href="">Adoptez-le</a>
+            </div>
 
-    </section>
-</main>
+            <div class="article__carousel">
+                <img class="carousel__chat--img" src="/public/img/chats-noirs/chat-4.jpg" alt="">
+                <h2 class="carousel__name">Saphir - 5 ans</h2>
+                <h3 class="carousel__nickname">Un grand sage au regard apaisant</h3>
+                <p class="carousel__description">Saphir est un chat noir élégant et calme, avec des yeux
+                    profonds et un pelage lustré. Il aime les moments de
+                    tranquillité et les caresses douces. Parfait pour un foyer calme où il recevra toute l'attention
+                    qu'il mérite.
+                </p>
+                <a class="div__btn" href="">Adoptez-le</a>
+            </div>
 
-<body>
+            <div class="article__carousel">
+                <img class="carousel__chat--img" src="/public/img/chats-noirs/chat-5.jpg" alt="">
+                <h2 class="carousel__name">Ombre - 3 mois</h2>
+                <h3 class="carousel__nickname">Un petit farceur au grand cœur</h3>
+                <p class="carousel__description">Ombre est un chaton espiègle qui déborde d'énergie. Son pelage
+                    noir brillant et ses yeux pétillants reflètent sa
+                    curiosité. Il cherche une famille aimante et patiente pour grandir dans un foyer chaleureux.</p>
+                <a class="div__btn" href="">Adoptez-le</a>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer__article">
+        <ul class="footer__left">
+            <li>
+                <h2 class="footer__title footer__title--article">Pour nous contacter</h2>
+            </li>
+            <li class="footer__item">
+                <img class="footer__icon" src="/public/icones/mail.svg" alt="Icon Email">
+                <a class="footer__info footer__info--article" href="">@adopteCat@contact.fr</a>
+            </li>
+            <li class="footer__item">
+                <img class="footer__icon" src="/public/icones/phone.svg" alt="Icone Téléphone">
+                <a class="footer__info footer__info--article" href="">+33 1 54 84 21 36</a>
+            </li>
+        </ul>
+
+        <ul class="footer_right">
+            <li>
+                <h2 class="footer__title footer__title--article">Pour nous rendre visite</h2>
+            </li>
+            <li class="footer__item">
+                <img class="footer__icon" src="/public/icones/localisation.svg" alt="Icone localisation">
+                <a class="footer__info footer__info--article" href="">88 rue Adopte Cat, Paris 75000</a>
+            </li>
+            <li class="footer__item">
+                <img class="footer__icon" src="/public/icones/time.svg" alt="Icone horaire">
+                <a class="footer__info footer__info--article" href="">Horaire d'ouverture</a>
+            </li>
+        </ul>
+        <img class="footer__cat footer__cat--article" src="/public/icones/chat.svg" alt="Petit chat">
+
+    </footer>
+
 
 </body>
 

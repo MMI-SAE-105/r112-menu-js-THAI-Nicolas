@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #F9F4EF
 }
 
 .header__logo-img {
@@ -14,8 +15,13 @@
     height: 150px;
 }
 
-.header {
-    background-color: #F9F4EF;
+.header__article {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 100px;
+    top: 0;
+    z-index: 1000;
 }
 
 .main {
@@ -209,6 +215,15 @@ div.div__btn:active {
     padding-bottom: 50px;
 }
 
+.footer__article {
+    color: white;
+    background-color: #8C7851;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+}
+
 .footer__left {
     margin-right: 100px;
 }
@@ -221,6 +236,14 @@ div.div__btn:active {
     margin-bottom: 50px;
 }
 
+.footer__title--article {
+    font-size: 18px;
+}
+
+.footer__info--article {
+    font-size: 12px;
+}
+
 .footer__info {
     color: white;
     text-decoration: none;
@@ -230,8 +253,8 @@ div.div__btn:active {
 }
 
 .footer__icon {
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
     margin-right: 20px;
 }
 
@@ -243,4 +266,84 @@ div.div__btn:active {
     width: 200px;
     height: 200px;
     margin-left: 150px;
+}
+
+.footer__cat--article {
+    width: 120px;
+    height: 120px;
+}
+
+.main__article--intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 190px;
+    margin-bottom: 100px;
+}
+
+.main__article--title {
+    font-size: 42px;
+    margin-bottom: 0;
+}
+
+.main__article--text {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.main__article--bar {
+    width: 800px;
+    height: 3px;
+    object-fit: cover;
+    position: absolute;
+    top: 330px;
+}
+
+.section__carousel--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article__carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    width: 600px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.carousel__chat--img {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.chatnoir {
+    object-position: center 20%;
+}
+
+.carousel__name {
+    margin-bottom: 0px;
+}
+
+.carousel__nickname {
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.carousel__description {
+    width: 500px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
