@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nos chats roux</title>
     <!-- Déclaration de la feuille de style -->
-    <link rel="stylesheet" href="/src/css/components/menu.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
     <script type="module" src="/src/js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="header container">
+    <header class="header header__article">
 
         <div class="header__start">
 
@@ -22,8 +26,9 @@
 
         <div class="header__end">
 
-            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-                <img class="menu-btn__image" src="/public/icones/logo-menu.svg" alt="Logo menu Icon">
+            <button class="header__menu-btn menu-btn" aria-label="Accéder au menu principal" aria-expanded="false"
+                aria-controls="mainNav">
+                <img class="menu-btn-img" src="/public/icones/logo-menu.svg" alt="Logo menu Icon">
             </button>
 
             <!-- Menu principal -->
@@ -39,127 +44,115 @@
                         <a class="menu__link" href="/dogs/chien-1.html">Top 5 des chiens les plus adoptées</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/dogs/chien-2.html">Top 5 des chiens les plus dangerueux</a>
+                        <a class="menu__link" href="/dogs/chien-2.html">Top 5 des chiens les plus dangereux</a>
                     </li>
                 </ul>
             </nav>
             <!-- Fin du menu principal -->
         </div>
+
     </header>
-
     <main>
-        <h1>Nos chats roux à l'adoption</h1>
-        <p>Decouvrez nos meilleurs citrouilles</p>
-        <img src="/public/icones/horizontal-bar.svg" alt="">
+        <div class="main__article--intro">
+            <h1 class="main__article--title">Nos chats roux à l'adoption</h1>
+            <p class="main__article--text">Decouvrez nos meilleurs citrouilles !</p>
+            <img class="main__article--bar" src="/public/icones/horizontal-line.svg" alt="Barre horizontale">
+        </div>
+
+
+        <section class="section__carousel--container">
+            <div class="article__carousel">
+                <img class="carousel__chat--img chatnoir" src="/public/img/chats-roux/roux-1.jpg" alt="chat roux 1">
+                <h2 class="carousel__name">Sunny - 2 ans</h2>
+                <h3 class="carousel__nickname">Un rayon de soleil dans votre quotidien</h3>
+                <p class="carousel__description">Sunny, au pelage roux et aux yeux ambrés, est un chat affectueux qui
+                    adore les câlins et explorer. Curieux et sociable,
+                    il s'entend bien avec les enfants et les autres animaux. Un compagnon idéal pour une famille
+                    aimante.</p>
+                <a class="div__btn" href="">Adoptez-le</a>
+            </div>
+
+            <div class="article__carousel">
+                <img class="carousel__chat--img chatnoir" src="/public/img/chats-roux/roux-2.webp" alt="chat roux 1">
+                <h2 class="carousel__name">Caramel - 5 ans</h2>
+                <h3 class="carousel__nickname">Le gourmand tendre au grand cœur</h3>
+                <p class="carousel__description">Caramel, au pelage roux et aux yeux verts, est un chat calme qui adore
+                    les siestes confortables et les câlins. Passionné
+                    par les friandises, il s'épanouit dans une maison paisible, où il peut profiter d'une routine stable
+                    et de beaucoup
+                    d'amour.</p>
+                <a class="div__btn" href="">Adoptez-le</a>
+
+            </div>
+            <div class="article__carousel">
+                <img class="carousel__chat--img chatnoir" src="/public/img/chats-roux/roux-3.jpg" alt="chat roux 3">
+                <h2 class="carousel__name">Flamme - 8 mois</h2>
+                <h3 class="carousel__nickname">Un jeune bolide prêt à enflammer votre cœur</h3>
+                <p class="carousel__description">Flamme, au pelage roux intense, est un chat énergique qui adore jouer
+                    avec tout ce qui bouge. Curieux et joueur, il
+                    devient un adorable ronronneur après ses aventures. Il cherche une famille dynamique prête à
+                    partager jeux et tendresse.</p>
+                <a class="div__btn" href="">Adoptez-le</a>
+
+            </div>
+
+            <div class="article__carousel">
+                <img class="carousel__chat--img chatnoir" src="/public/img/chats-roux/roux-4.webp" alt="chat roux 1">
+                <h2 class="carousel__name">Simba - 3 ans</h2>
+                <h3 class="carousel__nickname">Un roi majestueux et affectueux</h3>
+                <p class="carousel__description">Simba, au pelage roux et aux yeux dorés, est un chat majestueux au cœur
+                    tendre. Sociable et adaptable, il adore les
+                    caresses et les rayons du soleil près des fenêtres. Un compagnon royal prêt à régner dans votre cœur
+                    et votre foyer.</p>
+                <a class="div__btn" href="">Adoptez-le</a>
+
+            </div>
+
+            <div class="article__carousel">
+                <img class="carousel__chat--img chatnoir" src="/public/img/chats-roux/roux-5.jpg" alt="chat roux 5">
+                <h2 class="carousel__name">Biscuit - 4 mois</h2>
+                <h3 class="carousel__nickname">Un petit gourmand à croquer</h3>
+                <p class="carousel__description">Biscuit, chaton roux plein d'énergie et de curiosité, adore courir
+                    après les jouets et explorer la maison. Avec son
+                    pelage doux et ses yeux pétillants, il cherche aussi des câlins lorsqu'il est fatigué. Un compagnon
+                    joyeux et affectueux
+                    à adopter !</p>
+                <a class="div__btn" href="">Adoptez-le</a>
+
+            </div>
+
+
+        </section>
     </main>
-
-    <section>
-        <div class="carrousel">
-            <img src="/public/img/chats-roux/roux-1.jpg" alt="">
-            <h2>Sunny - 2 ans</h2>
-            <h3>Un rayon de soleil dans votre quotidien</h3>
-            <p>Sunny, avec son pelage roux flamboyant et ses yeux ambrés, est un véritable éclat de lumière. Âgé de 2
-                ans, il a une
-                personnalité douce et affectueuse. Ce jeune chat adore les câlins et n’hésite pas à venir se frotter
-                contre vos jambes
-                pour réclamer de l’attention. Sunny a également une petite touche de curiosité et aime explorer de
-                nouveaux espaces dans
-                la maison. Il s’entend bien avec les autres animaux et apprécie les enfants, ce qui en fait un compagnon
-                parfait pour
-                une famille prête à lui offrir amour et sécurité.</p>
-        </div>
-
-        <div class="carrousel">
-            <img src="/public/img/chats-roux/roux-2.webp" alt="">
-            <h2>Caramel - 5 ans</h2>
-            <h3>Le gourmand tendre au grand cœur</h3>
-            <p>Caramel, 5 ans, est un grand amateur de confort et de douceurs. Son pelage d’un roux chaud rappelle la
-                couleur de son
-                nom, et ses yeux verts regorgent de gentillesse. Ce chat calme et posé aime les longues siestes dans des
-                endroits
-                douillets et les moments de câlins au coin du canapé. Sa passion ? Les friandises ! Offrez-lui une
-                petite récompense et
-                vous gagnerez son amour éternel. Caramel s’épanouirait dans une maison paisible où il pourra profiter
-                d’une routine
-                stable et de beaucoup d’amour.</p>
-        </div>
-
-        <div class="carrousel">
-            <img src="/public/img/chats-roux/roux-3.jpg" alt="">
-            <h2>Flamme - 8 mois</h2>
-            <h3>Un jeune bolide prêt à enflammer votre cœur</h3>
-            <p>Flamme est un jeune chat de 8 mois plein d’énergie et de joie de vivre. Avec son pelage roux intense et
-                ses moustaches
-                curieuses, il est impossible de lui résister. Il adore jouer avec tout ce qui bouge : balles, plumes,
-                ficelles, rien ne
-                lui échappe. Mais après une journée bien remplie, Flamme devient un adorable petit ronronneur qui
-                s’installe sur vos
-                genoux pour une soirée cocooning. Il cherche une famille dynamique prête à partager des moments de jeux
-                et de tendresse
-                avec lui.</p>
-        </div>
-
-        <div class="carrousel">
-            <img src="/public/img/chats-roux/roux-4.webp" alt="">
-            <h2>Simba - 3 ans</h2>
-            <h3>Un roi majestueux et affectueux</h3>
-            <p>Simba, 3 ans, est un magnifique chat roux au port majestueux. Avec ses yeux dorés et son pelage épais et
-                brillant, il
-                rappelle un petit lion. Mais derrière cette allure imposante se cache un grand tendre qui adore les
-                caresses et les mots
-                doux. Simba est de nature sociable et s’adapte facilement à son environnement. Il aime les grandes
-                fenêtres où il peut
-                observer le monde extérieur et profiter des rayons du soleil. Ce chat royal est prêt à régner dans votre
-                cœur et votre
-                foyer.
-            </p>
-        </div>
-
-        <div class="carrousel">
-            <img src="/public/img/chats-roux/roux-5.jpg" alt="">
-            <h2>Biscuit - 4 mois</h2>
-            <h3>Un petit gourmand à croquer</h3>
-            <p>Biscuit, 4 mois, est un chaton roux adorable qui déborde d’énergie et de curiosité. Son pelage doux et
-                ses yeux
-                pétillants font de lui un véritable charmeur. Biscuit passe ses journées à courir après des jouets,
-                découvrir chaque
-                recoin de la maison et demander des câlins dès qu’il est fatigué. Il est encore jeune et apprend les
-                bonnes manières,
-                mais avec un peu de patience, il deviendra un compagnon fidèle et affectueux. Adoptez Biscuit, et il
-                remplira votre vie
-                de joie et d'émerveillement !</p>
-        </div>
-
-    </section>
-    <footer class="footer">
+    <footer class="footer__article">
         <ul class="footer__left">
             <li>
-                <h2 class="footer__title">Pour nous contacter</h2>
+                <h2 class="footer__title footer__title--article">Pour nous contacter</h2>
             </li>
             <li class="footer__item">
                 <img class="footer__icon" src="/public/icones/mail.svg" alt="Icon Email">
-                <a class="footer__info" href="">@adopteCat@contact.fr</a>
+                <a class="footer__info footer__info--article" href="">@adopteCat@contact.fr</a>
             </li>
             <li class="footer__item">
                 <img class="footer__icon" src="/public/icones/phone.svg" alt="Icone Téléphone">
-                <a class="footer__info" href="">+33 1 54 84 21 36</a>
+                <a class="footer__info footer__info--article" href="">+33 1 54 84 21 36</a>
             </li>
         </ul>
 
         <ul class="footer_right">
             <li>
-                <h2 class="footer__title">Pour nous rendre visite</h2>
+                <h2 class="footer__title footer__title--article">Pour nous rendre visite</h2>
             </li>
             <li class="footer__item">
                 <img class="footer__icon" src="/public/icones/localisation.svg" alt="Icone localisation">
-                <a class="footer__info" href="">88 rue Adopte Cat, Paris 75000</a>
+                <a class="footer__info footer__info--article" href="">88 rue Adopte Cat, Paris 75000</a>
             </li>
             <li class="footer__item">
                 <img class="footer__icon" src="/public/icones/time.svg" alt="Icone horaire">
-                <a class="footer__info" href="">Horaire d'ouverture</a>
+                <a class="footer__info footer__info--article" href="">Horaire d'ouverture</a>
             </li>
         </ul>
-        <img class="footer__cat" src="/public/icones/chat.svg" alt="Petit chat">
+        <img class="footer__cat footer__cat--article" src="/public/icones/chat.svg" alt="Petit chat">
 
     </footer>
 </body>
