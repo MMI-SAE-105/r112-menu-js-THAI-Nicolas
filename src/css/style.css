@@ -28,6 +28,15 @@
     background-color: #F9F4EF;
 }
 
+.menu__item {
+    text-decoration: underline;
+    color: black;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 7px;
+}
+
 .container-flexbox {
     display: flex;
     justify-content: center;
@@ -46,7 +55,7 @@
     font-weight: 300;
     font-style: normal;
     letter-spacing: 2.96px;
-    ;
+
 }
 
 .div__intro-text {
@@ -181,6 +190,9 @@ div.div__btn:active {
     width: 600px;
     height: 250px;
     object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    object-position: center 35%;
 }
 
 .article__box-text {
@@ -189,6 +201,8 @@ div.div__btn:active {
     height: 250px;
     justify-content: start;
     align-items: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 
 }
 
