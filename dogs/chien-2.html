@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Les chiens les plus dangereux</title>
     <!-- Déclaration de la feuille de style -->
-    <link rel="stylesheet" href="/src/css/components/menu.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
     <script type="module" src="/src/js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="header container">
+    <header class="header header__article">
 
         <div class="header__start">
 
@@ -22,8 +26,9 @@
 
         <div class="header__end">
 
-            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-                <img class="menu-btn__image" src="/public/icones/logo-menu.svg" alt="Logo menu Icon">
+            <button class="header__menu-btn menu-btn" aria-label="Accéder au menu principal" aria-expanded="false"
+                aria-controls="mainNav">
+                <img class="menu-btn-img" src="/public/icones/logo-menu.svg" alt="Logo menu Icon">
             </button>
 
             <!-- Menu principal -->
@@ -36,10 +41,10 @@
                         <a class="menu__link" href="/cats/chat-2.html">Nos chats roux</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/dogs/chien-1.html">Top 5 des chiens les plus adoptées</a>
+                        <a class="menu__link" href="/dogs/chien-1.html">Top 5 des chiens les plus intélligents</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/dogs/chien-2.html">Top 5 des chiens les plus dangerueux</a>
+                        <a class="menu__link" href="/dogs/chien-2.html">Top 5 des chiens les plus dangereux</a>
                     </li>
                 </ul>
             </nav>
@@ -48,100 +53,118 @@
 
     </header>
     <main>
-        <h1>Top 5 des Chiens les Plus Dangereux : Des Compagnons à Maîtriser avec Responsabilité</h1>
-        <p>Certains chiens sont connus pour leur puissance et leur instinct protecteur, ce qui peut les rendre dangereux
-            s'ils ne
-            sont pas bien socialisés ou éduqués. Toutefois, il est important de noter que le comportement d’un chien
-            dépend
-            largement de son éducation, de son environnement et de la manière dont il est traité. Voici un top 5 des
-            chiens souvent
-            considérés comme "dangereux", mais qui, entre de bonnes mains, peuvent être d’excellents compagnons.</p>
-        <img src="/public/icones/horizontal-bar.svg" alt="">
+        <div class="main__article--intro">
+            <h1 class="main__article--title">Top 5 des Chiens les Plus Dangereux</h1>
+            <p class="main__article--text">Certains chiens sont connus pour leur puissance et leur instinct protecteur,
+                ce qui peut les rendre dangereux.</p>
+            <img class="main__article--bar" src="/public/icones/horizontal-line.svg" alt="Barre horizontale">
+        </div>
 
         <section>
-            <div class="container">
-                <h2>Le Pitbull : La force brute</h2>
-                <p>Le Pitbull est l'une des races les plus controversées en raison de sa puissance et de son passé en
-                    tant que chien de
-                    combat. Avec une mâchoire puissante et un instinct protecteur, ce chien peut être dangereux s'il
-                    n'est pas socialisé dès
-                    son plus jeune âge. Cependant, bien dressé, il est loyal et affectueux avec ses proches.</p>
-                <img src="/public/img/chien-dangereux/pitbull.jpg" alt="PitBull">
+            <div class="article-dog">
+                <a href="https://fr.wikipedia.org/wiki/American_Pit_Bull_Terrier" target="_blank">
+                    <h2 class="carousel__name dog__name">Top 1 : Le Pitbull, la force brute</h2>
+                    <img class="dog__img" src="/public/img/chien-dangereux/pitbull.jpg" alt="Photo Pitbull">
+                    <p class="dog__description">Le Pitbull est l'une des races les plus controversées en raison de sa
+                        puissance et de son passé en
+                        tant que chien de
+                        combat. Avec une mâchoire puissante et un instinct protecteur, ce chien peut être dangereux s'il
+                        n'est pas socialisé dès
+                        son plus jeune âge. Cependant, bien dressé, il est loyal et affectueux avec ses proches.</p>
+                </a>
             </div>
 
-            <div class="container">
-                <h2>Le Rottweiler : Le protecteur puissant</h2>
-                <p>Le Rottweiler est un chien de garde par excellence, connu pour sa force et sa détermination. Son
-                    instinct territorial
-                    peut le rendre agressif envers les étrangers s’il n'est pas correctement socialisé. Malgré cela,
-                    avec une éducation
-                    ferme mais douce, il peut devenir un chien équilibré et dévoué à sa famille.</p>
-                <img src="/public/img/chien-dangereux/rottweiler.jpg" alt="Rottweiler">
+            <div class="article-dog">
+                <a href="https://fr.wikipedia.org/wiki/Rottweiler" target="_blank">
+                    <h2 class="carousel__name dog__name">Top 2 : Le Rottweiler,le protecteur puissant</h2>
+                    <img class="dog__img" src="/public/img/chien-dangereux/rottweiler.jpg" alt="Image Rottweiler">
+                    <p class="dog__description">Le Rottweiler est un chien de garde par excellence, connu pour sa force
+                        et sa détermination. Son
+                        instinct territorial
+                        peut le rendre agressif envers les étrangers s'il n'est pas correctement socialisé. Malgré cela,
+                        avec une éducation
+                        ferme mais douce, il peut devenir un chien équilibré et dévoué à sa famille.</p>
+                </a>
             </div>
 
-            <div class="container">
-                <h2>Le Berger d’Anatolie : Le gardien du troupeau</h2>
-                <p>Originaire de Turquie, le Berger d’Anatolie est un chien massif conçu pour protéger le bétail contre
-                    les prédateurs. Son
-                    indépendance et sa méfiance envers les étrangers peuvent le rendre difficile à contrôler pour des
-                    propriétaires
-                    inexpérimentés. Une formation rigoureuse est essentielle pour canaliser son instinct de protection.
-                </p>
-                <img src="/public/img/chien-dangereux/berger-anatolie.jpg" alt="Berger d'Anatolie">
+            <div class="article-dog">
+                <a href="https://fr.wikipedia.org/wiki/Berger_Kangal" target="_blank">
+                    <h2 class="carousel__name dog__name">Top 3 : Le Berger d'Anatolie, le gardien du troupeau</h2>
+                    <img class="dog__img" src="/public/img/chien-dangereux/berger-anatolie.jpeg"
+                        alt="Image Berger Anatolie">
+                    <p class="dog__description">Originaire de Turquie, le Berger d'Anatolie est un chien massif conçu
+                        pour protéger le bétail contre
+                        les prédateurs. Son
+                        indépendance et sa méfiance envers les étrangers peuvent le rendre difficile à contrôler pour
+                        des
+                        propriétaires
+                        inexpérimentés. Une formation rigoureuse est essentielle pour canaliser son instinct de
+                        protection.</p>
+                </a>
             </div>
 
-            <div class="container">
-                <h2>Le Malinois : L’atout des forces de l’ordre</h2>
-                <p>Ce chien, souvent utilisé dans la police et l’armée, est incroyablement intelligent et énergique.
-                    Cependant, son besoin
-                    constant de stimulation mentale et physique peut devenir problématique s'il n’est pas satisfait. Mal
-                    socialisé, un
-                    Malinois peut développer des comportements agressifs. Il convient donc à des maîtres expérimentés
-                    prêts à investir
-                    beaucoup de temps dans son éducation.</p>
-                <img src="/public/img/chien-dangereux/malinois.jpg" alt="Le Malinois">
+            <div class="article-dog">
+                <a href="https://fr.wikipedia.org/wiki/Malinois_(chien)" target="_blank">
+                    <h2 class="carousel__name dog__name">Top 4 : Le Malinois, l'atout des forces de l'ordre</h2>
+                    <img class="dog__img" src="/public/img/chien-dangereux/malinois.jpg" alt="Image Malinois">
+                    <p class="dog__description">Ce chien, souvent utilisé dans la police et l'armée, est incroyablement
+                        intelligent et énergique.
+                        Cependant, son besoin
+                        constant de stimulation mentale et physique peut devenir problématique s'il n'est pas satisfait.
+                        Mal
+                        socialisé, un
+                        Malinois peut développer des comportements agressifs. Il convient donc à des maîtres
+                        expérimentés
+                        prêts à investir
+                        beaucoup de temps dans son éducation.</p>
+                </a>
             </div>
 
-            <div class="container">
-                <h2>Le Tosa Inu : Le géant réservé</h2>
-                <p>Originaire du Japon, le Tosa Inu est un chien de grande taille initialement élevé pour les combats.
-                    Bien qu'il soit
-                    généralement calme et réservé, il peut devenir agressif si ses besoins sociaux et physiques ne sont
-                    pas comblés. Dans
-                    certains pays, cette race est réglementée ou interdite.</p>
-                <img src="/public/img/chien-dangereux/tosa-inu.jpg" alt="Tosa Inu">
+            </div>
+            <div class="article-dog">
+                <a href="https://fr.wikipedia.org/wiki/Tosa_(chien)" target="_blank">
+                    <h2 class="carousel__name dog__name">Top 5 : Le Tosa Inu, le géant réservé</h2>
+                    <img class="dog__img" src="/public/img/chien-dangereux/tosa-inu.JPG" alt="Tosa Inu image">
+                    <p class="dog__description">Originaire du Japon, le Tosa Inu est un chien de grande taille
+                        initialement élevé pour les combats.
+                        Bien qu'il soit
+                        généralement calme et réservé, il peut devenir agressif si ses besoins sociaux et physiques ne
+                        sont
+                        pas comblés. Dans
+                        certains pays, cette race est réglementée ou interdite.</p>
+                </a>
             </div>
         </section>
     </main>
     <footer class="footer__article">
         <ul class="footer__left">
             <li>
-                <h2 class="footer__title">Pour nous contacter</h2>
+                <h2 class="footer__title footer__title--article">Pour nous contacter</h2>
             </li>
             <li class="footer__item">
                 <img class="footer__icon" src="/public/icones/mail.svg" alt="Icon Email">
-                <a class="footer__info" href="">@adopteCat@contact.fr</a>
+                <a class="footer__info footer__info--article" href="">@adopteCat@contact.fr</a>
             </li>
             <li class="footer__item">
                 <img class="footer__icon" src="/public/icones/phone.svg" alt="Icone Téléphone">
-                <a class="footer__info" href="">+33 1 54 84 21 36</a>
+                <a class="footer__info footer__info--article" href="">+33 1 54 84 21 36</a>
             </li>
         </ul>
 
         <ul class="footer_right">
             <li>
-                <h2 class="footer__title">Pour nous rendre visite</h2>
+                <h2 class="footer__title footer__title--article">Pour nous rendre visite</h2>
             </li>
             <li class="footer__item">
                 <img class="footer__icon" src="/public/icones/localisation.svg" alt="Icone localisation">
-                <a class="footer__info" href="">88 rue Adopte Cat, Paris 75000</a>
+                <a class="footer__info footer__info--article" href="">88 rue Adopte Cat, Paris 75000</a>
             </li>
             <li class="footer__item">
                 <img class="footer__icon" src="/public/icones/time.svg" alt="Icone horaire">
-                <a class="footer__info" href="">Horaire d'ouverture</a>
+                <a class="footer__info footer__info--article" href="">Horaire d'ouverture</a>
             </li>
         </ul>
-        <img class="footer__cat" src="/public/icones/chat.svg" alt="Petit chat">
+        <img class="footer__cat footer__cat--article" src="/public/icones/chat.svg" alt="Petit chat">
 
     </footer>
 </body>
